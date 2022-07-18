@@ -1,0 +1,1 @@
+exports.soma = (x, y) => Number(x) + Number(y);

@@ -1,0 +1,1 @@
+exports.subtracao = (x, y) => Number(x) - Number(y);

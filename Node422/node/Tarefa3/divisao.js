@@ -1,0 +1,1 @@
+exports.divisao = (x, y) => Number(y) !== 0 ? Number(x) / Number(y) : 'Não é possível dividir por 0';

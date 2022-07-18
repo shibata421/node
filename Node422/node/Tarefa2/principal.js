@@ -1,0 +1,10 @@
+const soma = require('./soma')
+const subtracao = require('./subtracao')
+const multiplicacao = require('./multiplicacao')
+const divisao = require('./divisao')
+
+console.log(soma(1, 2))
+console.log(subtracao(1, 2))
+console.log(multiplicacao(1, 2))
+console.log(divisao(1, 2))
+console.log(divisao(1, 0))

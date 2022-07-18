@@ -2,13 +2,14 @@ const sqlite3 = require('sqlite3').verbose()
 const md5 = require('md5')
 
 const DBSOURCE = "db.sqlite"
-const tableQuery = `CREATE TABLE user (
+const tableQuery = `DROP TABLE user;
+CREATE TABLE user (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name text, 
     email text UNIQUE, 
     password text, 
     CONSTRAINT email_unique UNIQUE (email)
-    )`
+    );`
 const insertQuery = 'INSERT INTO user (name, email, password) VALUES (?,?,?)'
 
 let db = new sqlite3.Database(DBSOURCE, err => {
